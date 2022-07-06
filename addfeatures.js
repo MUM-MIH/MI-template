@@ -10,7 +10,9 @@ window.addEventListener('load',function(){
    		$('.mceToolbarRow2').css('display', 'table');
   		$('.mceToolbarRow3').css('display', 'table');
 	});
-		//make a variable of the section name
+	//make a variable of the breadcrumbs
+  	var SchoolSpecific = $("li.breadcrumb-item").text();	
+	//make a variable of the section name
 	var assessmentSectionName=$('h3.sectionname').text();
 	//check if we are on the key contacts section
 	if (assessmentSectionName.match(/Key Contacts/) != null && window.location.href.slice(-10) != "&section=0"){
